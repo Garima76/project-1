@@ -20,7 +20,7 @@ nav{
 
     
 }
-main{
+#main{
     background: rgb(76, 101, 122);
     grid-area: main;
 }
@@ -44,9 +44,8 @@ footer{
     background: burlywood;
     grid-area: footer;
 }
-@media only screen and(max-width: 500px){
+@media  screen and (max-width: 500px){
     .container{
-        width:100%;
         grid-template-columns: 1fr;
         grid-template-rows:0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas: 
@@ -58,4 +57,8 @@ footer{
           "content3"
           "footer"
     }
+}
+.cntnt2{
+    background: rgb(214, 188, 122);
+    grid-area: content2;
 }
